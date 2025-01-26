@@ -1,0 +1,114 @@
+{
+  "spdxVersion": "SPDX-2.3",
+  "dataLicense": "CC0-1.0",
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "name": "ubuntu",
+  "documentNamespace": "https://anchore.com/syft/image/ubuntu-c084e1aa-1a87-4de9-ac8d-e10249e13453",
+  "creationInfo": {
+    "licenseListVersion": "3.25",
+    "creators": [
+      "Organization: Anchore, Inc",
+      "Tool: syft-1.19.0"
+    ],
+    "created": "2025-01-26T16:02:27Z"
+  },
+  "packages": [
+    {
+      "name": "apt",
+      "SPDXID": "SPDXRef-Package-deb-apt-06a7cb64fed9a9e8",
+      "versionInfo": "2.7.14build2",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": true,
+      "packageVerificationCode": {
+        "packageVerificationCodeValue": "72b161128932b643c755d1c46dfdf87d288117ce"
+      },
+      "sourceInfo": "acquired package info from DPKG DB: /usr/share/doc/apt/copyright, /var/lib/dpkg/info/apt.conffiles, /var/lib/dpkg/info/apt.list, /var/lib/dpkg/info/apt.md5sums, /var/lib/dpkg/info/apt.postinst, /var/lib/dpkg/info/apt.postrm, /var/lib/dpkg/info/apt.preinst, /var/lib/dpkg/info/apt.prerm, /var/lib/dpkg/info/apt.shlibs, /var/lib/dpkg/info/apt.triggers, /var/lib/dpkg/status",
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "BSD-3-Clause AND LicenseRef-Expat AND GPL-2.0-only AND GPL-2.0-or-later",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "SECURITY",
+          "referenceType": "cpe23Type",
+          "referenceLocator": "cpe:2.3:a:apt:apt:2.7.14build2:*:*:*:*:*:*:*"
+        },
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceType": "purl",
+          "referenceLocator": "pkg:deb/ubuntu/apt@2.7.14build2?arch=amd64&distro=ubuntu-24.04"
+        }
+      ]
+    },
+    {
+      "name": "base-files",
+      "SPDXID": "SPDXRef-Package-deb-base-files-7c40bbb8cd8d89b6",
+      "versionInfo": "13ubuntu10.1",
+      "supplier": "NOASSERTION",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": true,
+      "packageVerificationCode": {
+        "packageVerificationCodeValue": "0b77ad3eb3b104372fec96770a4fce05a61c8423"
+      },
+      "sourceInfo": "acquired package info from DPKG DB: /usr/share/doc/base-files/copyright, /var/lib/dpkg/info/base-files.conffiles, /var/lib/dpkg/info/base-files.list, /var/lib/dpkg/info/base-files.md5sums, /var/lib/dpkg/info/base-files.postinst, /var/lib/dpkg/info/base-files.postrm, /var/lib/dpkg/info/base-files.preinst, /var/lib/dpkg/info/base-files.prerm, /var/lib/dpkg/info/base-files.triggers, /var/lib/dpkg/status",
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "LicenseRef-GPL",
+      "copyrightText": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "SECURITY",
+          "referenceType": "cpe23Type",
+          "referenceLocator": "cpe:2.3:a:base-files:base-files:13ubuntu10.1:*:*:*:*:*:*:*"
+        }
+      ]
+    }
+  ],
+  "files": [
+    {
+      "fileName": "etc/alternatives/README",
+      "SPDXID": "SPDXRef-File-etc-alternatives-README-ca050bb87179619b",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "de50c1abd6fca390d6ba22505f9aded89c150fc8"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "a44afdb50eacfc09e45f6dac1e18ae231c179feec633c106e1060bae8ae11df1"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION",
+      "comment": "layerID: sha256:687d50f2f6a697da02e05f2b2b9cb05c1d551f37c404ebe55fdec44b0ae8aa5c"
+    },
+    {
+      "fileName": "etc/apt/apt.conf.d/01-vendor-ubuntu",
+      "SPDXID": "SPDXRef-File-etc-apt-apt.conf.d-01-vendor-ubuntu-496642daa6d19f41",
+      "fileTypes": [
+        "TEXT"
+      ],
+      "checksums": [
+        {
+          "algorithm": "SHA1",
+          "checksumValue": "43742ca9cbd8e8c18241a9b38aa302d92b0fa51c"
+        },
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "364d5eeac5475b7dddfd629899ea88b91ed8d8e8e319c29bb9dbd6772e87ed55"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "licenseInfoInFiles": [
+        "NOASSERTION"
+      ],
+      "copyrightText": "NOASSERTION",
+      "comment": "layerID: sha256:687d50f2f6a697da02e05f2b2b9cb05c1d551f37c404ebe55fdec44b0ae8aa5c"
+    }
+  ]
+}
