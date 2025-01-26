@@ -30,8 +30,8 @@ class SyftToolCycloneDXTest {
     @Test
     void testSearchForPackage_WithMatchingComponentName() throws Exception {
         // Define the search pattern
-        String searchPattern = "library-name";
-        String format = "CycloneDX";
+        String searchPattern = "apt";
+        String format = "CYCLONEDX";
 
         // Call the method to test
         Map<String, Object> result = syftTool.searchForPackage(sampleCycloneDXSBOM, searchPattern, format);
@@ -57,7 +57,7 @@ class SyftToolCycloneDXTest {
     void testSearchForPackage_WithNonMatchingComponentName() throws Exception {
         // Define the search pattern
         String searchPattern = "nonexistent-component";
-        String format = "CycloneDX";
+        String format = "CYCLONEDX";
 
         // Call the method to test
         Map<String, Object> result = syftTool.searchForPackage(sampleCycloneDXSBOM, searchPattern, format);

@@ -1,0 +1,93 @@
+{
+  "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.6",
+  "serialNumber": "urn:uuid:738ae16e-b14f-40fe-bb00-5f32b02b4a0f",
+  "version": 1,
+  "components": [
+    {
+      "bom-ref": "pkg:deb/ubuntu/apt@2.7.14build2?arch=amd64&distro=ubuntu-24.04&package-id=06a7cb64fed9a9e8",
+      "type": "library",
+      "publisher": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>",
+      "name": "apt",
+      "version": "2.7.14build2",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0-or-later"
+          }
+        },
+        {
+          "license": {
+            "name": "Expat"
+          }
+        }
+      ],
+      "cpe": "cpe:2.3:a:apt:apt:2.7.14build2:*:*:*:*:*:*:*",
+      "purl": "pkg:deb/ubuntu/apt@2.7.14build2?arch=amd64&distro=ubuntu-24.04",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "dpkg-db-cataloger"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:deb/ubuntu/base-files@13ubuntu10.1?arch=amd64&distro=ubuntu-24.04&package-id=7c40bbb8cd8d89b6",
+      "type": "library",
+      "publisher": "Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>",
+      "name": "base-files",
+      "version": "13ubuntu10.1",
+      "licenses": [
+        {
+          "license": {
+            "name": "GPL"
+          }
+        }
+      ],
+      "cpe": "cpe:2.3:a:base-files:base-files:13ubuntu10.1:*:*:*:*:*:*:*",
+      "purl": "pkg:deb/ubuntu/base-files@13ubuntu10.1?arch=amd64&distro=ubuntu-24.04",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "dpkg-db-cataloger"
+        }
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "pkg:deb/ubuntu/apt@2.7.14build2?arch=amd64&distro=ubuntu-24.04&package-id=06a7cb64fed9a9e8",
+      "dependsOn": [
+        "pkg:deb/ubuntu/base-passwd@3.6.3build1?arch=amd64&distro=ubuntu-24.04&package-id=0efb79380a8e7129",
+        "pkg:deb/ubuntu/gpgv@2.4.4-2ubuntu17?arch=amd64&distro=ubuntu-24.04&package-id=759add0dfa30196e&upstream=gnupg2",
+        "pkg:deb/ubuntu/libapt-pkg6.0t64@2.7.14build2?arch=amd64&distro=ubuntu-24.04&package-id=44ade88aa6dc45d0&upstream=apt",
+        "pkg:deb/ubuntu/libc6@2.39-0ubuntu8.3?arch=amd64&distro=ubuntu-24.04&package-id=9a158b759b948b41&upstream=glibc",
+        "pkg:deb/ubuntu/libgcc-s1@14.2.0-4ubuntu2~24.04?arch=amd64&distro=ubuntu-24.04&package-id=e845f2961faf644e&upstream=gcc-14",
+        "pkg:deb/ubuntu/libgnutls30t64@3.8.3-1.1ubuntu3.2?arch=amd64&distro=ubuntu-24.04&package-id=0011119616925acc&upstream=gnutls28",
+        "pkg:deb/ubuntu/libseccomp2@2.5.5-1ubuntu3.1?arch=amd64&distro=ubuntu-24.04&package-id=5597afacea47e5f6&upstream=libseccomp",
+        "pkg:deb/ubuntu/libstdc%2B%2B6@14.2.0-4ubuntu2~24.04?arch=amd64&distro=ubuntu-24.04&package-id=6c5d4c081570d052&upstream=gcc-14",
+        "pkg:deb/ubuntu/libsystemd0@255.4-1ubuntu8.4?arch=amd64&distro=ubuntu-24.04&package-id=c7f1045a1a4c5eec&upstream=systemd",
+        "pkg:deb/ubuntu/ubuntu-keyring@2023.11.28.1?arch=all&distro=ubuntu-24.04&package-id=6676dc2606cda118"
+      ]
+    },
+    {
+      "ref": "pkg:deb/ubuntu/base-files@13ubuntu10.1?arch=amd64&distro=ubuntu-24.04&package-id=7c40bbb8cd8d89b6",
+      "dependsOn": [
+        "pkg:deb/ubuntu/libc6@2.39-0ubuntu8.3?arch=amd64&distro=ubuntu-24.04&package-id=9a158b759b948b41&upstream=glibc",
+        "pkg:deb/ubuntu/libcrypt1@1%3A4.4.36-4build1?arch=amd64&distro=ubuntu-24.04&package-id=972b1b351576f188&upstream=libxcrypt",
+        "pkg:deb/ubuntu/mawk@1.3.4.20240123-1build1?arch=amd64&distro=ubuntu-24.04&package-id=8a7d0182333cdca2"
+      ]
+    }
+  ]
+}
