@@ -51,7 +51,7 @@ public class SyftTool {
         result.put("dependencies", RegexSearch.searchWithRegex(dependenciesList, searchPattern, "ref"));
 
         List<Map<String, Object>> componentsList = (List<Map<String, Object>>) sbom.get("components");
-        result.put("components", RegexSearch.searchWithRegex(componentsList, searchPattern, "bom-ref"));
+        result.put("components", RegexSearch.searchWithRegex(componentsList, searchPattern, "name"));
 
         return result;
     }
